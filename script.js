@@ -1,6 +1,8 @@
 let circuloCerto
+let pontos = 0
 const circulosColoridos = document.getElementsByClassName('ball');
 const FraseAcerto = document.getElementById('answer');
+const placar = document.getElementById('score')
 
 function gerarCores() {
     const cor1 = Math.floor(Math.random() * 255);
@@ -39,6 +41,8 @@ jogoEvento();
 
 function certo() {
     FraseAcerto.innerText = 'Acertou!';
+    pontos += 3;
+    placar.innerText = pontos;
     coresIniciais();
     jogoEvento();
 }
