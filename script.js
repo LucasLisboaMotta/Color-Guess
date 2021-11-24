@@ -49,3 +49,10 @@ function errado() {
     jogoEvento();
 }
 
+function reinicia() {
+    FraseAcerto.innerText = 'Escolha uma cor';
+    coresIniciais();
+}
+
+const botaoReinicia = document.getElementById('reset-game');
+botaoReinicia.addEventListener('click', reinicia);
