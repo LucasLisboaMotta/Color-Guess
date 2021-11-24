@@ -3,3 +3,7 @@
     border-radius: 100%;
     padding: 50px;
 }
+
+#reset-game, #answer {
+    display: inline-block;
+}
