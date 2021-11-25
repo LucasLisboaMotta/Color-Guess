@@ -5,7 +5,6 @@ const FraseAcerto = document.getElementById('answer');
 const placar = document.getElementById('score');
 
 function gerarCores() {
-  console.log('gerarCores');
   const cor1 = Math.floor(Math.random() * 255);
   const cor2 = Math.floor(Math.random() * 255);
   const cor3 = Math.floor(Math.random() * 255);
